@@ -29,10 +29,10 @@ export default function Home() {
       </div>
     </div>
     <div className="flex flex-col w-full gap-3 items-center justify-center">
-      <div className="flex gap-2 text-3xl font-mono justify-start w-full items-center">
+      <div className="flex gap-2 text-2xl font-mono justify-start w-full items-center">
         Hii, I'm sharad.A <div className='text-orange-600 font-bold font-sans'><TypingComponent/></div>
       </div>
-      <ul className="text-xl flex gap-4 flex-col mt-8 font-mono list-disc">
+      <ul className="text-lg flex gap-4 flex-col mt-8 font-mono list-disc">
         <li>
           Third-year Information Science student by day in <span className="text-orange-600 font-semibold">Dayananda Sagar of College of Enginnering</span>, 
           DSA enthusiast by night, and explorer of Bangalore's vibrant life in between.
