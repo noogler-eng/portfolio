@@ -31,7 +31,7 @@ export default function Home() {
       </div>
     </div>
     <div className="flex flex-col w-full gap-3 items-center justify-center">
-      <div className="text-sm flex-col mt-12 md:mt-0 flex gap-2 font-mono justify-start w-full items-center">
+      <div className="text-sm md:text-xl flex-col md:flex-row md:mt-0 mt-12 flex gap-2 font-mono justify-start w-full items-center">
         Hii, I'm sharad.A <div className='text-orange-600 font-semibold font-mono'><TypingComponent/></div>
       </div>
       <ul className="flex gap-4 flex-col mt-8 font-mono list-disc">
