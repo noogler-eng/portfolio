@@ -2,6 +2,8 @@ import Image from "next/image";
 import { socials } from "./social";
 import Link from "next/link";
 import TypingComponent from "./Typed";
+import { Code } from 'lucide-react';
+
 
 
 export default function Home() {
@@ -16,7 +18,7 @@ export default function Home() {
   })
   
   
-  return <div className="flex items-center justify-center min-h-screen p-24">
+  return <div className="flex items-center justify-center min-h-screen p-20">
     <div className="flex flex-col gap-3 items-center justify-center w-full">
       <div className="border p-2 rounded-full">
         <Image src='/me.jpeg' alt="sharad" width={350} height={350} className="rounded-full h-56 w-56 bg-blue-500 shadow-lg shadow-purple-500/50"/>
@@ -29,10 +31,10 @@ export default function Home() {
       </div>
     </div>
     <div className="flex flex-col w-full gap-3 items-center justify-center">
-      <div className="flex gap-2 text-2xl font-mono justify-start w-full items-center">
-        Hii, I'm sharad.A <div className='text-orange-600 font-bold font-sans'><TypingComponent/></div>
+      <div className="flex gap-2 text-xl font-mono justify-start w-full items-center">
+        Hii, I'm sharad.A <div className='text-orange-600 font-semibold font-mono'><TypingComponent/></div>
       </div>
-      <ul className="text-lg flex gap-4 flex-col mt-8 font-mono list-disc">
+      <ul className="flex gap-4 flex-col mt-8 font-mono list-disc">
         <li>
           Third-year Information Science student by day in <span className="text-orange-600 font-semibold">Dayananda Sagar of College of Enginnering</span>, 
           DSA enthusiast by night, and explorer of Bangalore's vibrant life in between.
@@ -47,6 +49,14 @@ export default function Home() {
           Ready to dive into challenging projects and contribute to innovative solutions.This is my 
           <a href={'/me.pdf'} download className="text-orange-600 font-semibold"> resume.</a>
         </li>
+        <li>
+          🚀 Just wrapped up some exciting projects! From frontend to backend with MERN, 
+          sprinkled in some Web3 magic with smart contracts & Thirdweb SDKs. 
+          Each one is unique—scalable, feature-packed, or crafted for learning. Onwards & upwards! 
+          #WebDev #Web3 #MERN #BuildingTheFuture. 
+          <a href={'/projects'} className="text-cyan-500 font-semibold flex gap-2">projects<Code/></a>
+          <a href={'/lowLevelDesign'} className="text-cyan-500 font-semibold flex gap-2">low level design<Code/></a>
+        </li> 
         <li>
           <span className="font-semibold">Note:</span> This site is still under construction. I'll work on it in my free time
         </li>

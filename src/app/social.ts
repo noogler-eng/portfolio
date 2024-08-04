@@ -19,7 +19,7 @@ export const socials = [
     },
     {
         icon: 'mail',
-        href: 'sharadpoddar1001@gmail.com',
+        href: 'mailto:sharadpoddar1001@gmail.com',
         Component: Mail
     },
     {
