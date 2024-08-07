@@ -6,7 +6,7 @@ export default function Projects(){
 
     const navigate = useRouter();
 
-    return <div className="flex flex-col items-center justify-center min-h-screen p-20">
+    return <div className="p-4 md:p-20 flex flex-col items-center justify-center min-h-screen">
         <h1 className="text-orange-600 font-semibold font-mono w-full mb-12 text-2xl relative">
             low level designs
         </h1>

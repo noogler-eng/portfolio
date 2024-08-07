@@ -1,14 +1,17 @@
+"use client"
 import Image from "next/image";
 import { socials } from "./social";
 import Link from "next/link";
 import TypingComponent from "./Typed";
 import { Code } from 'lucide-react';
-
+import { Bitcoin } from 'lucide-react';
+import { useToast } from "@/components/ui/use-toast"
 
 
 export default function Home() {
   
-  
+  const { toast } = useToast()
+
   const socialIcons = socials.map((item, index)=>{
     const { Component, href, icon } = item;
     return <div key={index} className="flex flex-col text-sm justify-center items-center">
@@ -18,7 +21,7 @@ export default function Home() {
   })
   
   
-  return <div className="flex flex-col md:flex-row items-center justify-center min-h-screen p-20">
+  return <div className="p-8 md:p-16 flex flex-col md:flex-row items-center justify-center min-h-screen">
     <div className="flex flex-col gap-3 items-center justify-center w-full">
       <div className="border p-2 rounded-full">
         <Image src='/me.jpeg' alt="sharad" width={350} height={350} className="rounded-full h-56 w-56 bg-blue-500 shadow-lg shadow-purple-500/50"/>
@@ -31,8 +34,13 @@ export default function Home() {
       </div>
     </div>
     <div className="flex flex-col w-full gap-3 items-center justify-center">
-      <div className="text-sm md:text-xl flex-col md:flex-row md:mt-0 mt-12 flex gap-2 font-mono justify-start w-full items-center">
-        Hii, I'm sharad.A <div className='text-orange-600 font-semibold font-mono'><TypingComponent/></div>
+      <div className="text-sm md:text-xl flex flex-col md:mt-0 mt-12 flex gap-2 font-mono justify-start w-full items-center">
+        <span className="flex gap-2 items-center"><Bitcoin className="border rounded-full p-1 hover:bg-amber-500" size={32} onClick={()=>{
+          console.log("toast is clicking")
+          toast({
+            description: "Hi, i am sharad! how are you",
+          })
+        }}/>Hii, I'm sharad</span> <span className="w-full flex gap-2 justify-center">A<div className='text-orange-600 font-semibold font-mono'><TypingComponent/></div></span>
       </div>
       <ul className="flex gap-4 flex-col mt-8 font-mono list-disc">
         <li>
